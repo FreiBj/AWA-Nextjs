@@ -3,6 +3,7 @@ import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
+import Head from "next/head";
 
 export default function Index() {
   return (
@@ -10,6 +11,9 @@ export default function Index() {
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
+      <Head>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      </Head>
       <div className="container">
         <div>
           <h1>
